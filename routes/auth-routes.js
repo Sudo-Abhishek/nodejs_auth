@@ -9,7 +9,7 @@ const router = express.Router();
 
 // all routes related to authentication and authorization
 router.post("/register", registerUser);
-router.get("/login", loginUser);
+router.post("/login", loginUser);
 router.post("/change-password", authMiddleware, changePassword);
 
 module.exports = router;
